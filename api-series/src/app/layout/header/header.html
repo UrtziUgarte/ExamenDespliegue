@@ -1,0 +1,25 @@
+<header class="app-header">
+  <div class="logo">
+    <span class="logo-palomitas">🍿</span>
+    <span class="logo-texto">Series de Urtzi Ugarte :)</span>
+  </div>
+
+  <nav class="nav-links">
+    <a
+      routerLink="/home"
+      routerLinkActive="active-link"
+      class="nav-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Listado
+    </a>
+
+    <a
+      routerLink="/new"
+      routerLinkActive="active-link"
+      class="nav-link"
+    >
+      Nueva serie
+    </a>
+  </nav>
+</header>

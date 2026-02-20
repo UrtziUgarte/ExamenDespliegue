@@ -1,0 +1,21 @@
+<h2>Listado de Series</h2>
+
+@if (loading) {
+  <p>Cargando...</p>
+}
+
+@if (!loading && series.length === 0) {
+  <p>No hay series.</p>
+}
+
+@if (!loading && series.length > 0) {
+  <div class="grid">
+    @for (serie of series; track serie.id) {
+      <div class="card">
+        <h3>{{ serie.title }}</h3>
+        <p><strong>Canal:</strong> {{ serie.channel }}</p>
+        <p><strong>Rating:</strong> ⭐ {{ serie.rating }}</p>
+      </div>
+    }
+  </div>
+}

@@ -1,0 +1,36 @@
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  background: #667eea;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+}
+
+.success {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+small {
+  color: red;
+}

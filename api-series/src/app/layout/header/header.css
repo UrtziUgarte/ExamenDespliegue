@@ -1,0 +1,50 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #111827, #1f2937);
+  color: #f9fafb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.logo-palomitas {
+  font-size: 1.4rem;
+}
+
+.logo-texto {
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.nav-link:hover {
+  background: rgba(249, 250, 251, 0.12);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.active-link {
+  background: #f97316;
+  color: #111827;
+}
